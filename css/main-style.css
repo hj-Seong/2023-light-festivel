@@ -22,7 +22,7 @@
 
 /* 태그이름을 통한 css디자인 */
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'HS-Regular';
 }
 section { 
@@ -47,7 +47,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 24px 20px;
 }
 .header>.nav>.nav-menu {
     display: flex;
@@ -57,8 +57,9 @@ section {
 .header>.nav>.nav-menu a {
     color: white;
     text-decoration: none;
-    font-family: 'HS-Regular';
+    font-family: 'TAEBAEKmilkyway';
     font-size: 1.2rem;
+    font-weight: bold;
 }
 .header>.nav>.nav-menu a::after {
     content: "";
@@ -81,10 +82,10 @@ section {
 
 
 .header>.nav>.nav-title {
-    width: 170px;
+    width: 150px;
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'PyeongChangPeace-Bold';
+    font-family: 'HS-Regular';
 }
 
 /*main*/
@@ -105,12 +106,14 @@ section {
     color: white;
     text-align: right;
     padding: 250px 20px 0 20px;
+    text-shadow: 0 0 5px black;
+    font-weight: bold;
 }
 .section1-wrap>.section1-title>h1{
     font-size: 3rem;
 }
 .section1-wrap>.section1-title>h3 {
-    font-family: 'HS-Regular';
+    font-family: 'TAEBAEKmilkyway';
     font-size: 1.5rem;
     margin: 10px 0;
 }
@@ -224,7 +227,13 @@ section {
     font-weight: bolder; 
     padding-right: 50px;
 }
-.section4-news>table tr:hover td {
+.section4-news>table tr td a{
+    color: black;
+    text-decoration: none;
+}
+.section4-news>table tr:hover td,
+.section4-news>table tr:hover td a
+{
     color: #EB5D99;
 }
 
