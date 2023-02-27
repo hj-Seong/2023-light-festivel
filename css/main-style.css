@@ -1,0 +1,48 @@
+/* 태그이름을 통한 css디자인 */
+h1 {
+    font-size: 2rem;
+}
+section { 
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* 클래스 이름을 통한 css디자인 */
+/* header의 nav */
+.header { background-color: aqua; }
+.header>.nav {
+    background-color: aliceblue;
+    max-width:1000px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.header>.nav>.nav-menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+.header>.nav>.nav-title {
+    width: 170px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*main*/
+/* 섹션부분을 찾기 힘들것같다면 메인에 두어도 상관없음 */
+.main { background-color: rgb(0, 212, 212);}
+
+/*section 단위로 접근*/
+.section1-wrap {
+    width: 100%;
+    min-height: 300px;
+    height: 100vh;
+    background-image: url(../img/Festival.jpg);
+    background-size: cover;
+    background-position: center;
+}
