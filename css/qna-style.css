@@ -22,6 +22,7 @@
     width: 300px;
     display: block;
     margin: auto;
+    overflow: auto;
 }
 .section-qna>form input[type="checkbox"] {
     float: left;

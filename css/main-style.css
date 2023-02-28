@@ -291,3 +291,43 @@ section {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+/* nav 모바일 버튼*/
+.nav>.mobile-button {
+    display: none;
+    background-image: url(../img/bars-solid.svg);
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* 미디어쿼리 - nav*/
+@media screen and (max-width:767px) {
+    .header {background-color: #EB5D99cc;}
+    .nav>.mobile-button {
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+    .nav>.nav-menu{
+        flex-direction: column;
+        height: 60px;
+        transition: all 0.5s;
+    }
+    .nav>.nav-menu>li{
+        display: none;
+    }
+    .nav>.mobile-button:hover+.nav-menu,
+    .nav>.nav-menu:hover
+    {
+        height: 100vh;
+        transition: all 0.5s;
+    }
+    .nav>.mobile-button:hover+.nav-menu>li,
+    .nav>.nav-menu:hover>li
+    {
+        display: inline-block;
+    }
+}
